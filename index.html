@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigação Criminal - Crislaine Aragão</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Investigação Criminal</h1>
+
+        <!-- Introdução do caso -->
+        <div id="introducao">
+            <p>Crislaine Aragão, de 25 anos, foi encontrada morta em seu apartamento na noite de 15 de setembro. Sem sinais de arrombamento, o caso deixou a cidade em choque.</p>
+            <p>Você, como detetive encarregado, deve desvendar o mistério por trás de sua morte. Quem está por trás desse crime? Analise as pistas e tome suas decisões com cuidado.</p>
+            <button onclick="iniciarJogo()">Iniciar Investigação</button>
+        </div>
+
+        <!-- Jogo em si -->
+        <div id="jogo" style="display:none;">
+            <div id="dialogo"></div>
+            <div id="opcoes"></div>
+            <div id="erro" style="display:none;">
+                <p>Você acusou a pessoa errada. O jogo vai reiniciar!</p>
+                <button onclick="reiniciarJogo()">Reiniciar Jogo</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
